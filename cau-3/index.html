@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý sách</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <h2>Quản lý sách</h2>
+
+    <div class="input">
+        <table id="input-form">
+            <tr>
+                <td><label for="id">Mã số sách:</label></td>
+                <td><input type="text" class="input-data" id="id"></td>
+            </tr>
+            <tr>
+                <td><label for="name">Tên sách:</label></td>
+                <td><input type="text" class="input-data" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="publish">Năm xuất bản:</label></td>
+                <td><input type="text" class="input-data" id="publish"></td>
+            </tr>
+            <tr>
+                <td><label for="quantity">Số lượng sách:</label></td>
+                <td><input type="text" class="input-data" id="quantity"></td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="display-table">
+        <table id="table">
+
+        </table>
+
+    </div>
+    <div class="btn">
+        <button id="add-old" onclick="addOldBook()">Thêm sách đã có</button>
+        <button id="add-new" onclick="addNewBook()">Thêm sách mới</button>
+        <button id="borrow" onclick="borrow()">Mượn sách</button>
+        <button id="max-quanlity" onclick="showMaxQuantity()">Hiển thị sách nhiều nhất</button>
+    </div>
+</div>
+
+</body>
+<script src="js/Book.js"></script>
+<script src="js/Main.js"></script>
+</html>
